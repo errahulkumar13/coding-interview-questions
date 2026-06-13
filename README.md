@@ -5,6 +5,7 @@ A collection of practical coding interview questions with runnable starter examp
 ## Questions
 
 1. [DOM Manipulation: Dynamic Table From JSON](questions/dom-dynamic-table/README.md)
+2. [Algorithm: Check If Two Strings Are Anagrams](questions/anagram-check/README.md)
 
 ## How to Run
 
