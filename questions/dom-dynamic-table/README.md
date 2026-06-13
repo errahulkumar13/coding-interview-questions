@@ -22,4 +22,10 @@ You are given a list of users as JSON. Render the data into a table using JavaSc
 
 ## Run
 
-Open `index.html` in any modern browser.
+Build the TypeScript from the repository root:
+
+```powershell
+npm.cmd run build
+```
+
+Then open `index.html` in any modern browser.

@@ -1,0 +1,12 @@
+{
+  "name": "coding-interview-questions",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start:anagram": "node questions/anagram-check/solution.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

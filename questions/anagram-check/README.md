@@ -38,7 +38,13 @@ Output: true
 
 ## Run
 
-Use Node.js:
+Build the TypeScript from the repository root:
+
+```powershell
+npm.cmd run build
+```
+
+Then run the compiled JavaScript:
 
 ```powershell
 node solution.js

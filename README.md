@@ -9,4 +9,12 @@ A collection of practical coding interview questions with runnable starter examp
 
 ## How to Run
 
-Each question lives in its own folder. For browser-based questions, open the `index.html` file in a browser.
+Each question lives in its own folder.
+
+TypeScript solutions can be built from the repository root:
+
+```powershell
+npm.cmd run build
+```
+
+For browser-based questions, build first and then open the `index.html` file in a browser.
