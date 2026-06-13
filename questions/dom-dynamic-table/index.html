@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation - Dynamic Table</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="toolbar" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">DOM Manipulation</p>
+          <h1 id="page-title">Dynamic Table From JSON</h1>
+        </div>
+        <label class="search">
+          <span>Search users</span>
+          <input id="search-input" type="search" placeholder="Name, role, email, status" />
+        </label>
+      </section>
+
+      <section class="table-shell" aria-live="polite">
+        <table id="users-table"></table>
+        <p id="empty-state" class="empty-state" hidden>No matching users found.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
