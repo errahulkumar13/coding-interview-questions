@@ -10,27 +10,27 @@ function areAnagrams(first: string, second: string): boolean {
     return false;
   }
 
-  const characterCounts = new Map<string, number>();
+  const characterCounts: Record<string, number> = {};
 
   for (const character of normalizedFirst) {
-    characterCounts.set(character, (characterCounts.get(character) || 0) + 1);
+    characterCounts[character] = (characterCounts[character] || 0) + 1;
   }
 
   for (const character of normalizedSecond) {
-    const currentCount = characterCounts.get(character);
+    const currentCount = characterCounts[character];
 
     if (!currentCount) {
       return false;
     }
 
     if (currentCount === 1) {
-      characterCounts.delete(character);
+      delete characterCounts[character];
     } else {
-      characterCounts.set(character, currentCount - 1);
+      characterCounts[character] = currentCount - 1;
     }
   }
 
-  return characterCounts.size === 0;
+  return Object.keys(characterCounts).length === 0;
 }
 
 const testCases: Array<[string, string, boolean]> = [
